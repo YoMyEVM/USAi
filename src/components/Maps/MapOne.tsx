@@ -3,7 +3,11 @@ import 'jsvectormap/dist/css/jsvectormap.css';
 import { useEffect } from 'react';
 import '../../js/us-aea-en';
 
-const MapOne = () => {
+interface MapOneProps {
+  setSelectedState: (state: string | null) => void;
+}
+
+const MapOne: React.FC<MapOneProps> = ({ setSelectedState }) => {
   useEffect(() => {
     const mapOne = new jsVectorMap({
       selector: '#mapOne',
@@ -20,7 +24,6 @@ const MapOne = () => {
         },
       },
 
-      // Set the text color for state labels to black
       regionLabelStyle: {
         initial: {
           fontFamily: 'Satoshi',
@@ -39,9 +42,19 @@ const MapOne = () => {
           },
         },
       },
+
+      // Handle region clicks
+      onRegionClick: (_event: any, code: string) => {
+        const regionName = code.split('-')[1]; // Extract the state name
+        setSelectedState(regionName); // Update the parent state
+      },
     });
-    mapOne;
-  }, []);
+
+    return () => {
+      // Cleanup map on component unmount
+      mapOne.destroy();
+    };
+  }, [setSelectedState]); // Include setSelectedState in the dependency array
 
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7">
