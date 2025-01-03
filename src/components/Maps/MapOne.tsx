@@ -57,8 +57,8 @@ const MapOne: React.FC<MapOneProps> = ({ setSelectedState }) => {
   }, [setSelectedState]); // Include setSelectedState in the dependency array
 
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7">
-      <div id="mapOne" className="mapOne map-btn h-90"></div>
+    <div className="col-span-12 flex justify-center items-center rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div id="mapOne" className="mapOne map-btn h-90 w-full max-w-4xl"></div>
     </div>
   );
 };

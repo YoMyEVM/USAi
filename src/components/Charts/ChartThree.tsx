@@ -14,7 +14,7 @@ const ChartThree: React.FC<ChartThreeProps> = ({ selectedState }) => {
   };
 
   return (
-    <div className="sm:px-7.5 col-span-12 xl:col-span-5 rounded-sm border border-stroke bg-boxdark px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark flex flex-col justify-between h-full">
+      <div className="sm:px-7.5 col-span-12 xl:col-span-5 rounded-sm border border-stroke bg-boxdark px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark flex flex-col justify-between h-90">
       {/* Display the selected state's name */}
       <div className="flex justify-center items-center mb-5">
         <h1 className="text-4xl font-bold text-white">
@@ -25,13 +25,13 @@ const ChartThree: React.FC<ChartThreeProps> = ({ selectedState }) => {
       {/* Buy and Sell Buttons */}
       <div className="flex space-x-4 mt-auto">
         <button
-          className="w-1/2 px-6 py-4 bg-green-500 text-white rounded hover:bg-green-600"
+          className="w-1/2 px-6 py-4 bg-green-500 text-black font-bold text-lg rounded hover:bg-green-600"
           onClick={handleBuyClick}
         >
           Buy
         </button>
         <button
-          className="w-1/2 px-6 py-4 bg-red-500 text-white rounded hover:bg-red-600"
+          className="w-1/2 px-6 py-4 bg-red-500 text-black font-bold text-lg rounded hover:bg-red-600"
           onClick={handleSellClick}
         >
           Sell
