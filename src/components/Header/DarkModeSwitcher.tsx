@@ -15,7 +15,7 @@ const DarkModeSwitcher = () => {
           checked={colorMode === 'dark'} // Ensure the checkbox reflects the current mode
           onChange={() => {
             if (typeof setColorMode === 'function') {
-              setColorMode(colorMode === 'dark' ? 'light' : 'dark'); // Toggle between light and dark
+              setColorMode(colorMode === 'dark' ? 'dark' : 'dark'); // Toggle between light and dark
             }
           }}
           className="dur absolute top-0 z-50 m-0 h-full w-full cursor-pointer opacity-0"

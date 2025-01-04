@@ -4,18 +4,23 @@ import ChartOne from '../../components/Charts/ChartOne';
 import TableOne from '../../components/Tables/TableOne';
 import MapOne from '../../components/Maps/MapOne';
 
-const ECommerce: React.FC = () => {
+const Home: React.FC = () => {
   const [selectedState, setSelectedState] = useState<string | null>(null);
 
   return (
     <>
-      {/* Stats Section */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 bg-boxdark py-6">
-        <CardDataStats title="Total Views" total="$3.456K" rate="0.43%" levelUp />
-        <CardDataStats title="Total Profit" total="$45.2K" rate="4.35%" levelUp />
-        <CardDataStats title="Total Products" total="2.450" rate="2.59%" levelUp />
-        <CardDataStats title="Total Users" total="3.456" rate="0.95%" levelDown />
+{/* Stats Section */}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 -mb-6 bg-boxdark py-1">
+        <CardDataStats title="USAI Price" total="$3.456" rate="0.0%" levelUp />
+        <CardDataStats title="Total Value Locked" total="$45.2K" rate="0.0%" levelUp />
+        <CardDataStats title="Total Supply" total="2.450" rate="0.0%" levelUp />
+        <CardDataStats title="Market Cap" total="3.456" rate="0.0%" levelUp />
+        <CardDataStats title="States Founded" total="0" rate="0.0%" levelDown />
+        <CardDataStats title="Weekly Volume" total="$45.2K" rate="0.0%" levelUp />
+        <CardDataStats title="Total Users" total="1" rate="0.0%" levelUp />
+        <CardDataStats title="Nation's Treasury" total="3.456" rate="0.0%" levelUp />
       </div>
+
 
       {/* Full-Width Map Section */}
       <div className="bg-boxdark py-6">
@@ -50,4 +55,4 @@ const ECommerce: React.FC = () => {
   );
 };
 
-export default ECommerce;
+export default Home;
