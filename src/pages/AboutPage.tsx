@@ -1,12 +1,12 @@
 import React from 'react';
 
-const AgentsPage = () => {
+const AboutPage = () => {
   return (
     <div className="min-h-screen bg-boxdark text-white">
       {/* Header */}
       <header className="p-6 text-center bg-boxdark border-b border-strokedark">
-        <h1 className="text-4xl font-bold">Agents Page</h1>
-        <p className="mt-2 text-lg text-meta-3">Welcome to the Agents Page!</p>
+        <h1 className="text-4xl font-bold">Gov Page</h1>
+        <p className="mt-2 text-lg text-meta-3">Welcome to the Gov Page!</p>
       </header>
 
       {/* Main Content */}
@@ -30,4 +30,5 @@ const AgentsPage = () => {
   );
 };
 
-export default AgentsPage;
+
+export default AboutPage;

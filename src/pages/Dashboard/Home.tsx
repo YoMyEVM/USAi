@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <CardDataStats title="Total Value Locked" total="$45.2K" rate="0.0%" levelUp />
         <CardDataStats title="Total Supply" total="2.450" rate="0.0%" levelUp />
         <CardDataStats title="Market Cap" total="3.456" rate="0.0%" levelUp />
-        <CardDataStats title="States Founded" total="0" rate="0.0%" levelDown />
+        <CardDataStats title="States Founded" total="1" rate="0.0%" levelDown />
         <CardDataStats title="Weekly Volume" total="$45.2K" rate="0.0%" levelUp />
         <CardDataStats title="Total Users" total="1" rate="0.0%" levelUp />
         <CardDataStats title="Nation's Treasury" total="3.456" rate="0.0%" levelUp />

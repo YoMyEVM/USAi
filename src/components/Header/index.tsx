@@ -1,7 +1,7 @@
 // src/components/Header.tsx
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 import { BrowserProvider } from 'ethers';
 
 
@@ -28,7 +28,10 @@ const Header = () => {
       {/* Existing elements like logo, etc. */}
       <nav className="space-x-4">
         <Link to="/" className="text-white">Home</Link> {/* Home Link */}
-        <Link to="/agents" className="text-white">Agents</Link> {/* Link to AgentsPage */}
+        <Link to="/agents" className="text-white">Agents</Link> 
+        <Link to="/governance" className="text-white">Gov</Link> 
+        <Link to="/studio" className="text-white">Studio</Link> 
+        <Link to="/about" className="text-white">About</Link>
         {/* Add other links here */}
       </nav>
       {/* Wallet Connection Button */}
