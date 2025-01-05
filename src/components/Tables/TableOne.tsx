@@ -1,9 +1,8 @@
 import { BRAND } from '../../types/brand';
-import deFlag from '/stateFlags/de.png'; // Correct path to the public folder
 
 const brandData: BRAND[] = [
   {
-    logo: deFlag,
+    logo: '/stateFlags/de.png',  // Correct reference to the public folder
     name: 'Delaware',
     visitors: 3.5,
     revenues: '5,768',
@@ -11,6 +10,7 @@ const brandData: BRAND[] = [
     price: 4.8,
   },
 ];
+
 
 const TableOne = () => {
   return (
@@ -59,7 +59,7 @@ const TableOne = () => {
           >
             <div className="flex items-center gap-3 p-2.5 xl:p-5">
               <div className="flex-shrink-0">
-                <img src={brand.logo} alt="Brand" />
+                <img src={brand.logo} alt="Brand" /> {/* Use the logo path correctly */}
               </div>
               <p className="hidden text-black dark:text-white sm:block">
                 {brand.name}
