@@ -2,7 +2,7 @@ import { BRAND } from '../../types/brand';
 
 const brandData: BRAND[] = [
   {
-    logo: '/stateFlags/de.png',  // Correct path to the public folder
+    logo: '/stateFlags/de.png', // Ensure this is placed inside the public folder
     name: 'Delaware',
     visitors: 3.5,
     revenues: '5,768',
@@ -10,8 +10,6 @@ const brandData: BRAND[] = [
     price: 4.8,
   },
 ];
-
-
 
 const TableOne = () => {
   return (
@@ -23,29 +21,19 @@ const TableOne = () => {
       <div className="flex flex-col">
         <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
           <div className="p-2.5 xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Source
-            </h5>
+            <h5 className="text-sm font-medium uppercase sm:text-base">Source</h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Holders
-            </h5>
+            <h5 className="text-sm font-medium uppercase sm:text-base">Holders</h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Proceeds
-            </h5>
+            <h5 className="text-sm font-medium uppercase sm:text-base">Proceeds</h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Transactions
-            </h5>
+            <h5 className="text-sm font-medium uppercase sm:text-base">Transactions</h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Price
-            </h5>
+            <h5 className="text-sm font-medium uppercase sm:text-base">Price</h5>
           </div>
         </div>
 
@@ -60,11 +48,9 @@ const TableOne = () => {
           >
             <div className="flex items-center gap-3 p-2.5 xl:p-5">
               <div className="flex-shrink-0">
-                <img src={brand.logo} alt="Brand" /> {/* Use the logo path correctly */}
+                <img src={brand.logo} alt={brand.name} width={40} height={40} />
               </div>
-              <p className="hidden text-black dark:text-white sm:block">
-                {brand.name}
-              </p>
+              <p className="hidden text-black dark:text-white sm:block">{brand.name}</p>
             </div>
 
             <div className="flex items-center justify-center p-2.5 xl:p-5">

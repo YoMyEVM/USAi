@@ -7,7 +7,9 @@ export default defineConfig({
   base: './',
   build: {
     rollupOptions: {
-      external: ['/stateFlags/*'], // Add this line if necessary to externalize static assets.
+      // Externalizing assets that are not bundled. 
+      // But remember, static assets should be directly accessed from the public folder, not bundled.
+      external: ['/stateFlags/*'],
     }
   }
 });
