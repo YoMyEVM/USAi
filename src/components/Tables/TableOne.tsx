@@ -2,7 +2,7 @@ import { BRAND } from '../../types/brand';
 
 const brandData: BRAND[] = [
   {
-    logo: '/stateFlags/de.png',  // Correct reference to the public folder
+    logo: '/stateFlags/de.png',  // Correct path from the public folder
     name: 'Delaware',
     visitors: 3.5,
     revenues: '5,768',
