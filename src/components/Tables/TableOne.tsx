@@ -1,9 +1,9 @@
 import { BRAND } from '../../types/brand';
-import DelawareFlag from '/workspaces/free-react-tailwind-admin-dashboard/public/stateFlags/de.png';
+import deFlag from '/stateFlags/de.png'; // Correct path to the public folder
 
 const brandData: BRAND[] = [
   {
-    logo: DelawareFlag,
+    logo: deFlag,
     name: 'Delaware',
     visitors: 3.5,
     revenues: '5,768',
